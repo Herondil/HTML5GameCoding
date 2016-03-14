@@ -11,9 +11,7 @@ Voici les pages du programme suivi par les PIM 2015/2016 en programmation de jeu
 
 
 
-Contact 	: 
-    Maxens Dubois
+*Contact*
 
-    mail      : maxens.dubois@gmail.com
-
-    réseau		: Maxens Dubois sur Facebook, LinkedIn, Viadéo
+    mail    : maxens.dubois@gmail.com
+    réseau	: Maxens Dubois sur Facebook, LinkedIn, Viadéo
