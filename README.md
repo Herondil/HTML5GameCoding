@@ -1,4 +1,4 @@
-#HTML5GameCoding
+#Preparation Game Week PIM 2016
 
 ##In French :
 
