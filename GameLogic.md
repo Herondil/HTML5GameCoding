@@ -16,4 +16,4 @@ Semaine 1 : Console RPG
       - Les objets (en code) sont utilisés
       - Une façon de gagner, un message de victoire (ou un score à battre à la prochaine partie)
       - Il y a une collection de plusieurs milliers d'objets qui est utilisée
-      - Le jeu peut être "testé" 
+      - Si le jeu tient à trois parties de suite par trois personnes différentes
