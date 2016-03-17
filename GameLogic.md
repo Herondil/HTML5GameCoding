@@ -11,7 +11,7 @@ Semaine 1 : Console RPG
   Travail pratique :
     
     Le jeu est noté sur 6 avec 1 point par consigne suivante :
-      - La GameLoop est fonctionelle, avec au moins deux inputs consécutifs
+      - La GameLoop est fonctionelle, avec au moins deux arguments consécutifs
       - Il y a au moins un élément aléatoire, on ne sait pas comment va firnir le jeu
       - Les objets (en code) sont utilisés
       - Une façon de gagner, un message de victoire (ou un score à battre à la prochaine partie)
