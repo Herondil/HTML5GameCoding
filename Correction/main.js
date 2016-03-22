@@ -12,23 +12,61 @@
 ["M","M","M","M","M","M","M","M"]
 ];
 var taillemurs = 2,
-	block = "%c",
-	couleurmurs = "#000",
-	couleursols = "#f40",
-	couleurjoueur = "#f80",
-	couleursortie = "#b4d455";
+	block 	= "%c",
+	pos_x = 2,
+	pos_y = 8, 
+	couleurmurs 	= "#000",
+	couleursols 	= "#f40",
+	couleurjoueur 	= "#f80",
+	couleursortie 	= "#b4d455";
 for(var i = 0; !(i == taillemurs); i++){
 	block += " ";
 }
-setInterval(GameLoop,1000);
+
+//setInterval(GameLoop,1000);
+
 function GameLoop(input){
 	MovePlayer(input);
 	DrawMap();
 }
 
-function MovePlayer(input){
+function MovePlayer(input)
+{
 	
+	if(input != '')
+	{
+		map[pos_y][pos_x] = "_"; 
+		switch(input)
+		{
+			case 'haut':
+			{	
+				if(	map[pos_y-1][pos_x]!='M')
+				{
+					pos_y = pos_y -1;
+				}	
+			
+				break;
+			}
+			case'bas':
+			{
+				pos_y = pos_y+1; 
+				break;
+			}	
+			case'gauche': 
+			{
+				pos_x = pos_x-1; 
+				break;
+			}	
+			case'droite':
+			{
+				pos_x = pos_x + 1; 
+				break;
+			}	
+		}
+		map[pos_y][pos_x] = "P"; 
+	}
 }
+
 
 function DrawMap(){
 	//prévoir un espace pour les cases vides
