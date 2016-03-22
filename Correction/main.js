@@ -20,7 +20,7 @@ var taillemurs = 2,
 for(var i = 0; !(i == taillemurs); i++){
 	block += " ";
 }
-//setInterval(GameLoop,1000/2);
+setInterval(GameLoop,1000);
 function GameLoop(input){
 	MovePlayer(input);
 	DrawMap();
