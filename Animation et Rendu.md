@@ -1,6 +1,6 @@
 Semaine 2 : Labyrinthe et parcours
 
-  Objectif : Réussir à créer un petit jeu utilisant une logique de "Map", organisé avec d'un coté une fonction de rendu de la "Map", et de l'autre la logique du déplacement, des collisions et des input du joueur au clavier, via les exercices suivants :
+  Objectif : Réussir à créer un petit jeu utilisant une logique de "Map", organisé avec d'un coté une fonction de rendu de la "Map", et de l'autre la logique du déplacement, des collisions et des inputs du joueur au clavier, via les exercices suivants :
   
   Exercices :
     
