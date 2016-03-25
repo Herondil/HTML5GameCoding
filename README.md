@@ -5,8 +5,8 @@
 Voici les pages du programme suivi par les PIM 2015/2016 en programmation de jeux avant la Game Week.
 
 - [Game Logic en console](https://github.com/Herondil/HTML5GameCoding/blob/master/GameLogic.md)
-- Animation en scanvas
-- Scrolling et prites
+- [Labyrinthe et parcours](https://github.com/Herondil/HTML5GameCoding/blob/master/Animation%20et%20Rendu.md)
+- Scrolling et sprites
 
 
 
