@@ -37,7 +37,7 @@ function DrawMap(){
 	//second
 	img.data[4] = Math.round(Math.random()*5);
 	img.data[5] = Math.round(Math.random()*5);
-	img.data[6] = Math.round(Math.random()*255);
+	img.data[6] = Math.round(iMath.random()*255);
 	img.data[7] = 255;
 	
 	for(var j = Math.round(Math.random()*canvas.height); j < canvas.height;
