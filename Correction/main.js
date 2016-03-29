@@ -1,105 +1,59 @@
-﻿document.body.onload = function(){
-	window.map = [
-		["M","M","M","M","M","M","M","M"],
-		["M","_","_","M","M","_","_","M"],
-		["M","_","_","M","_","M","_","M"],
-		["M","_","_","P","M","_","_","M"],
-		["M","_","_","_","_","_","M","M"],
-		["M","_","_","M","_","M","_","M"],
-		["M","_","_","M","_","_","_","M"],
-		["M","_","_","M","_","M","_","M"],
-		["M","_","M","M","_","M","_","M"],
-		["M","_","_","M","_","M","S","M"],
-		["M","M","M","M","M","M","M","M"]
-	];
-	
-		
-	//création de la balise
+﻿var posxImageFond = 0;
+var posyImageFond = -1200;
+var largImageFond = 1280;
+var hautImageFond = 1920;
+
+var posxPerso1 = 740;
+var posyPerso1 = 252;
+var largPerso1 = 610/1.5;
+var hautPerso1 = 705/1.5;
+
+var posxPerso2 = 240;
+var posyPerso2 = 172;
+var largPerso2 = 105*4;
+var hautPerso2 = 137*4;
+
+var vitesse 	= 50;
+//var dateDebut   = Date.now();
+//var tempSession = 0
+
+document.body.onload = function(){		
+	//création de la balise canvas
 	window.canvas 	= document.createElement("canvas"),
 	window.context = canvas.getContext("2d");
-	window.wall = context.createImageData(8,8);
-	
-	for (var x = 0; x < 256; x+=4){
-		wall.data[x] = 25;
-		wall.data[x+1] = 125;
-		wall.data[x+2] = 50;
-		wall.data[x+3] = 255;
-	}
-	window.user = context.createImageData(8,8);
-	
-	for (var x = 0; x < 256; x+=4){
-		user.data[x] = 150;
-		user.data[x+1] = 100;
-		user.data[x+2] = 50;
-		user.data[x+3] = 200;
-	}
-	window.exit = context.createImageData(8,8);
-	
-	for (var x = 0; x < 256; x+=4){
-		exit.data[x] = 180;
-		exit.data[x+1] = 50;
-		exit.data[x+2] = 200;
-		exit.data[x+3] = 255;
-	}
-	window.empty = context.createImageData(8,8);
-	
-	for (var x = 0; x < 256; x+=4){
-		empty.data[x] = 180;
-		empty.data[x+1] = 180;
-		empty.data[x+2] = 180;
-		empty.data[x+3] = 255;
-	}
 	canvas.width = 1280;
 	canvas.height = 720;
 	//ajout de la balise au body
 	document.body.appendChild(canvas);
-	//requestAnimFrame
-	setInterval(GameLoop,1000/2);
+	//requestAnimFrame cool mais pas supporté partout
+	setInterval(GameLoop,1000/vitesse);
+	//import image de fond
+	window.imgFond = new Image();
+	imgFond.src = 'dojo.jpg';
+	//import image Perso 1 et 2
+	window.perso1 = new Image();
+	perso1.src = 'perso1.png';
+	window.perso2 = new Image();
+	perso2.src = 'perso2.png';
 }
+
 function GameLoop(){
-	DrawMap();
+	Animation();
+	DrawIntro();
 }
 
-function DrawMap(){
-	var casecourante = 0,
-		lignecourante = 0;
-		
-	while(true){
-		casecourante = 0;
-		
-		while(true){
-			
-			if(map[lignecourante][casecourante]=="M"){
-				context.putImageData(wall,
-				8*casecourante+5,8*lignecourante+5);
-			}
-			if(map[lignecourante][casecourante]=="_"){
-				context.putImageData(empty,
-				8*casecourante+5,8*lignecourante+5);	
-			}
-			if(map[lignecourante][casecourante]=="P"){
-				context.putImageData(user,
-				8*casecourante+5,8*lignecourante+5);
-			}
-			if(map[lignecourante][casecourante]=="S"){
-				context.putImageData(exit,
-				8*casecourante+5,8*lignecourante+5);
-			}
-			casecourante++;
-			if(casecourante == map[lignecourante].length){
-				break;
-			}
-		}
-		lignecourante++;
-		if(lignecourante == map.length){
-			break;
-		}
+function Animation(){
+	//if(timeSession==)
+	if(posyImageFond<0)
+	{
+		posyImageFond+=3;
 	}
+	posyPerso1+=5;
+	posyPerso2+=5;
+}
 
-	//for (var j = 5; j  < 72; j += 9){
-		//context.putImageData(wall,j,5);
-	//}
-	//context.putImageData(user,18,8);
-	//context.putImageData(exit,25,15);
-	//context.putImageData(empty,15,35);
+function DrawIntro(){
+	context.drawImage(imgFond,posxImageFond,posyImageFond,largImageFond,hautImageFond);
+	context.drawImage(perso1,posxPerso1,posyPerso1,largPerso1,hautPerso1);
+	context.drawImage(perso2,posxPerso2,posyPerso2,largPerso2,hautPerso2);
 }
