@@ -6,7 +6,7 @@ Voici les pages du programme suivi par les PIM 2015/2016 en programmation de jeu
 
 - [Game Logic en console](https://github.com/Herondil/HTML5GameCoding/blob/master/GameLogic.md)
 - [Labyrinthe et parcours](https://github.com/Herondil/HTML5GameCoding/blob/master/Animation%20et%20Rendu.md)
-- Scrolling et sprites
+- [Scrolling et sprites](https://github.com/Herondil/HTML5GameCoding/blob/master/canvasAnimation.md)
 
 
 
