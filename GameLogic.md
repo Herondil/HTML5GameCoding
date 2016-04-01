@@ -4,9 +4,19 @@ Semaine 1 : Console RPG
   
   Exercices :
     
-    Aléatoire
-    Objets
-    Tour par tour
+    Aléatoire :
+      - Réaliser une fonction "Pile" qui simule u jeu de pile ou face dans lequel on mise sur "Pile"
+      - Idem pour "Face"
+      - En une seule fonction les deux cas
+      - Ajouter la possibilité de miser, et un porte-monaie
+      - Réaliser une fonction pour simuler dégâts d'une épée entre 50 et 100, ajouter une gestion des points de vie
+
+    Objets :
+      - Programmer un système d'inventaire
+      - On peut voir l'inventaire, ajouter et enlever des objets
+
+    Tour par tour :
+      - Réaliser un jeu au tour par tour, avec une fonction "Jouer" qui prend en paramètre l'action du joueur à ce tour
     
   Travail pratique :
     
