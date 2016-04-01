@@ -16,7 +16,7 @@ Semaine 1 : Console RPG
       - On peut voir l'inventaire, ajouter et enlever des objets
 
     Tour par tour :
-      - Réaliser un jeu au tour par tour, avec une fonction "Jouer" qui prend en paramètre l'action du joueur à ce tour
+      - Réaliser un jeu au tour par tour, avec une fonction "Jouer" qui prend en paramètre l'action du joueur
     
   Travail pratique :
     
