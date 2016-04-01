@@ -4,7 +4,11 @@ Semaine 3 : Animation et défilement
   
   Exercices :
     
-    Dessin d'une map avec des carrés
+    Dessin d'une map avec des carrés :
+      - Arriver  dessiner un pixel procéduralement
+      - Puis un rectangle
+      - Puis la map de la semaine précédente
+
     Réalisation d'une intro de jeu, clône de celle de Street Fighter 2 avec :
       - Un décor de fond
       - Un personnage qui se déplace
@@ -12,6 +16,7 @@ Semaine 3 : Animation et défilement
       - Un fondu
       - Le titre apparaît à la fin du fondu
       - Une petite phrase sous le titre
+
     Utilisation du clipping dans une sprite-sheet :
       - Un personnage avec une animation d'idle sur un décor fixe
       - Déplacement gauche/droite au clavier
