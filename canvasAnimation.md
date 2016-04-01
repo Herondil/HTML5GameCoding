@@ -17,4 +17,4 @@ Semaine 3 : Animation et défilement
       - On trouve un effet de fondu
       - Un décor défile (dans l'intro ou dans le jeu)
       * Il y a au moins deux effets spéciaux (boules de feu, impacts ...)
-      * Si le jeu tient est jouable et testable
+      * Si le jeu est jouable et testable
