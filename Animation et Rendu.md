@@ -4,9 +4,10 @@ Semaine 2 : Labyrinthe et parcours
   
   Exercices :
     
-    - Affichage dans la console d'un jeu en une ligne 60 fois par seconde
-    - Utilsation d'un tableau à 2 dimension représentant un décor
-    - Déplacement au clavier et collision dans cette carte (réfléchir aux "phases" d'un jeu)
+    Affichage dans la console d'un jeu en une ligne 60 fois par seconde :
+      - 
+    Utilsation d'un tableau à 2 dimension représentant un décor :
+    Déplacement au clavier et collision dans cette carte (réfléchir aux "phases" d'un jeu):
     
   Travail pratique :
     
