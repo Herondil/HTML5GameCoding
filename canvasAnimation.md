@@ -5,7 +5,7 @@ Semaine 3 : Animation et défilement
   Exercices :
     
     Dessin d'une map avec des carrés :
-      - Arriver  dessiner un pixel procéduralement
+      - Arriver à dessiner un pixel procéduralement
       - Puis un rectangle
       - Puis la map de la semaine précédente
 
