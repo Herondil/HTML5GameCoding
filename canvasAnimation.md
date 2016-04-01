@@ -5,8 +5,16 @@ Semaine 3 : Animation et défilement
   Exercices :
     
     Dessin d'une map avec des carrés
-    Réalisation d'un petit film animé
-    Utilisation du clipping dans une sprite-sheet
+    Réalisation d'une intro de jeu, clône de celle de Street Fighter 2 avec :
+      - Un décor de fond
+      - Un personnage qui se déplace
+      - Le décor qui défile vers le bas
+      - Un fondu
+      - Le titre apparaît à la fin du fondu
+      - Une petite phrase sous le titre
+    Utilisation du clipping dans une sprite-sheet :
+      - Un personnage avec une animation d'idle sur un décor fixe
+      - Déplacement gauche/droite au clavier
     
   Travail pratique :
     
